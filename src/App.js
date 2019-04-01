@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Main from './Components/Main';
 import CodeView from './Components/CodeView';
 // Webpack CSS import
@@ -29,13 +29,13 @@ class App extends Component {
 
 	render() {
 		return (
-			<BrowserRouter>
+			<HashRouter>
 				<Switch>
 					<Route exact path="/" component={Main} />
 					<Route path="/code" component={CodeView} />
 					<Route path="/run" component={Executer} />
 				</Switch>
-			</BrowserRouter>
+			</HashRouter>
 		);
 	}
 }

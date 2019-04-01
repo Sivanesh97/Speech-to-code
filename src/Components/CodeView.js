@@ -22,7 +22,7 @@ class CodeView extends Component {
 			openRight       : false,
 			style           : {
 				width  : '100%',
-				height : '80vh'
+				height : '90vh'
 			},
 			style_id        : -1,
 			style_arr       : [
@@ -235,7 +235,16 @@ class CodeView extends Component {
 										</code>
 									</pre>
 								</div>
-								<BottomToolbar modifier="material" id="notifier">
+								<BottomToolbar
+									style={{
+										opacity   : '0.5',
+										// color     : 'white',
+										textAlign : 'center',
+										transform : 'translateY(20px)'
+									}}
+									modifier="material"
+									id="notifier"
+								>
 									{' '}
 									Content{' '}
 								</BottomToolbar>
